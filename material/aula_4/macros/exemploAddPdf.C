@@ -38,6 +38,7 @@ fit_result->Print("v");
 
 TCanvas *c1 = new TCanvas("c1", "c1", 800, 600);
 RooPlot* frame = x.frame();
+//model.paramOn(frame, RooFit::Layout(0.56, 0.9, 0.85), RooFit::ShowConstants(kTRUE));
 dataset->plotOn(frame);
 model.plotOn(frame);
 model.plotOn(frame,Components(linear),LineStyle(7),LineColor(kRed));
